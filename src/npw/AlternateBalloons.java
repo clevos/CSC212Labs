@@ -8,6 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 
+/**
+ * Modified the balloons program to create 300 balloons of the same radius with red, orange or yellow
+ */
 public class AlternateBalloons {
     // REQUIRED INFRASTRUCTURE
     public AlternateBalloons() {
