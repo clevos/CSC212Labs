@@ -1,6 +1,10 @@
 package npw;
 
 import java.util.Scanner;
+
+/**
+ * This program draws a rectangle using print statements and length and width provided by the user
+ */
 public class TextRectangles{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
