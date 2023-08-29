@@ -7,6 +7,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Scanner;
 
+/**
+ * This program demonstrates using a scanner to read user input and change the output of the program
+ */
 public class SimpleDots {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(SimpleDots::new);
