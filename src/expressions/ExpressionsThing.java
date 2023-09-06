@@ -12,6 +12,14 @@ public class ExpressionsThing {
         System.out.println("two = "+two);
         double three=(3.14*(5+5));
         System.out.println("three = "+three);
+        int four= (5*6);
+        System.out.println("four="+four);
+        double five=(55*.5);
+        System.out.println("five="+five);
+        double six=((double)65/3);
+        System.out.println("six="+six);
+        double seven=(five+six);
+        System.out.println("seven ="+seven);
     }
 
 }
