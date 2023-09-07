@@ -28,6 +28,14 @@ public class ExpressionsThing {
         System.out.println("ten="+ten);
         double eleven=(0.17*243.5);
         System.out.println("eleven="+eleven);
+        int twelve=(3/3);
+        System.out.println("twelve="+twelve);
+        int thirteen=(7-(4+2));
+        System.out.println("thirteen="+thirteen);
+        int fourteen=(((9-7)+3)-1);
+        System.out.println("fourteen="+fourteen);
+        int fifteen=((((8*4)/2)-6)/2);
+        System.out.println("fifteen="+fifteen);
     }
 
 }
