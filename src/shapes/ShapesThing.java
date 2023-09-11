@@ -15,5 +15,7 @@ public class ShapesThing {
     System.out.println("disk= " + disk.toString());
     System.out.println("area of circle=" + disk.area());
     System.out.println("perimeter of disk=" + disk.perimeter());
+    SSquare diamond=disk.inscribingSquare();
+    System.out.println("diamond=" + diamond.toString());
     }
 }
