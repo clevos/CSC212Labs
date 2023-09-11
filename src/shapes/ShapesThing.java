@@ -11,5 +11,9 @@ public class ShapesThing {
     System.out.println("area of square = " +square.area());
     System.out.println("perimeter of square= " + square.perimeter());
     System.out.println("diagonal of square " + square.diagonal());
+    SCircle disk= square.inscribingCircle();
+    System.out.println("disk= " + disk.toString());
+    System.out.println("area of circle=" + disk.area());
+    System.out.println("perimeter of disk=" + disk.perimeter());
     }
 }
