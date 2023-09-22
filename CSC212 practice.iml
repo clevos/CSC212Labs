@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="SimplePainter" level="project" />
+    <orderEntry type="library" name="SimpleComposer" level="project" />
+    <orderEntry type="library" name="jfugue-4.0.3-with-musicxml" level="project" />
   </component>
 </module>
