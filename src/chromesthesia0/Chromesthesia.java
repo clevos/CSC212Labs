@@ -69,7 +69,7 @@
         }
         //Methods pertaining to the chromesthetic pitches
         private static Pitch[]establishPtiches(SPainter painter){
-            Pitch[] pitches = new Pitch[9];
+            Pitch[] pitches = new Pitch[21];
             Pitch pitchMiddleC=new Pitch("C",painter);
             pitches[0]=pitchMiddleC;
             Pitch pitchLowC=new Pitch("C,",painter);
@@ -88,6 +88,30 @@
             pitches[7]=pitchLowE;
             Pitch pitchHighE= new Pitch("e",painter);
             pitches[8]=pitchHighE;
+            Pitch pitchMiddleF=new Pitch("F,",painter);
+            pitches[9]=pitchMiddleF;
+            Pitch pitchLowF=new Pitch("F",painter);
+            pitches[10]=pitchLowF;
+            Pitch pitchHighF= new Pitch("f",painter);
+            pitches[11]=pitchHighF;
+            Pitch pitchLowG=new Pitch("G",painter);
+            pitches[12]=pitchLowG;
+            Pitch pitchMiddleG= new Pitch("G,",painter);
+            pitches[13]=pitchMiddleG;
+            Pitch pitchHighG = new Pitch("g", painter);
+            pitches[14]=pitchHighG;
+            Pitch pitchHighA=new Pitch("a",painter);
+            pitches[15]=pitchHighA;
+            Pitch pitchLowA= new Pitch("A",painter);
+            pitches[16]=pitchLowA;
+            Pitch pitchMidA=new Pitch("A,",painter);
+            pitches[17]=pitchMidA;
+            Pitch pitchHighB=new Pitch("b",painter);
+            pitches[18]=pitchHighB;
+            Pitch pitchLowB=new Pitch("B",painter);
+            pitches[19]=pitchLowB;
+            Pitch pitchMidB=new Pitch("B,",painter);
+            pitches[20]=pitchMidB;
             return pitches;
         }
         private static Pitch find(String token, Pitch[] pitches) throws Exception{
