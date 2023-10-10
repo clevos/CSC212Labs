@@ -121,15 +121,33 @@ public class Pitch {
         } else if (d.equals("2")){
             Rational duration = note.getDuration();
             duration.times(2);
-            note.setDuration(duration);
+
             note.play();
             duration.divide(2);
         }else if (d.equals ("1/2")){
             Rational haveDuration = note.getDuration();
             haveDuration.divide(2);
-            note.setDuration(haveDuration);
             note.play();
             haveDuration.times(2);
+        }
+        else if(d.equals("3")) {
+            Rational duration = note.getDuration();
+            duration.times(3);
+            note.play();
+            duration.divide(3);
+        } else if (d.equals("1/3")){
+            Rational duration = note.getDuration();
+            duration.divide(3);
+
+            note.play();
+            duration.times(3);
+        }else if (d.equals ("2/3")){
+            Rational haveDuration = note.getDuration();
+            haveDuration.times(2);
+            haveDuration.divide(3);
+            note.play();
+            haveDuration.times(3);
+            haveDuration.divide(2);
         }
     }
 }

@@ -54,13 +54,18 @@ public class Chromesthesia {
     // The INTERPRETER
     public static void interpreter(){
         initialization();// miro and pitches
+        String again="";
         while (true){
             String input = getInput();
             if(input.equalsIgnoreCase("EXIT")){
                 break;
             } else{
+                if(input.equalsIgnoreCase("AGAIN")){
+                    input=again;
+                }
                 try {
                     playMelody(input,pitches);
+                    again =input;
                 }catch (Exception ex){
                     showErrorMessage(ex.toString());
                 }
@@ -131,10 +136,23 @@ public class Chromesthesia {
     }
     private static void playMelody(String input,Pitch[]pitches) throws Exception{
         Scanner scanner=new Scanner(input);
+
         while(scanner.hasNext()){
             String token=scanner.next();
-            Pitch pitch=find(token,pitches);
-            pitch.play("1");
+            String pitchName;
+            String duration="";
+            if(token.indexOf(",")<0){
+                pitchName=token.substring(0,1);
+                duration=token.substring(1);
+            }else{
+                pitchName=token.substring(0,2);
+                duration=token.substring(2);
+            }
+            if(duration.length()==0){
+                duration="1";
+            }
+            Pitch pitch=find(pitchName,pitches);
+            pitch.play(duration);
         }
     }
     //INITIALIZATION , CLEANUP, GETTING INPUT, ERROR MESSAGING
